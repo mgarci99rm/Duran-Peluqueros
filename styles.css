@@ -1,0 +1,566 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:#ffffff;
+color:#222;
+line-height:1.6;
+
+}
+
+header{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+background:rgba(255,255,255,.95);
+
+backdrop-filter:blur(12px);
+
+box-shadow:0 5px 25px rgba(0,0,0,.05);
+
+z-index:999;
+
+}
+
+.container{
+
+max-width:1200px;
+
+margin:auto;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:20px;
+
+}
+
+.logo{
+
+font-family:'Playfair Display',serif;
+
+font-size:30px;
+
+font-weight:bold;
+
+letter-spacing:2px;
+
+}
+
+nav{
+
+display:flex;
+
+gap:35px;
+
+}
+
+nav a{
+
+text-decoration:none;
+
+color:#222;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#b98a43;
+
+}
+
+.hero{
+
+height:100vh;
+
+background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1600&q=80");
+
+background-size:cover;
+
+background-position:center;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+color:white;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-family:'Playfair Display',serif;
+
+font-size:70px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:22px;
+
+margin-bottom:40px;
+
+}
+
+.buttons{
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:16px 34px;
+
+background:#b98a43;
+
+color:white;
+
+text-decoration:none;
+
+border-radius:40px;
+
+transition:.3s;
+
+font-weight:600;
+
+}
+
+.btn:hover{
+
+transform:translateY(-3px);
+
+background:#9c7337;
+
+}
+
+.secondary{
+
+background:white;
+
+color:#222;
+
+}
+
+.secondary:hover{
+
+background:#efefef;
+
+}
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.section h2{
+
+font-size:42px;
+
+margin-bottom:50px;
+
+font-family:'Playfair Display',serif;
+
+text-align:center;
+
+}
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:40px;
+
+}
+
+footer{
+
+background:#111;
+
+color:white;
+
+padding:40px;
+
+text-align:center;
+
+margin-top:0;
+
+}.why-us{
+
+background:#f7f7f7;
+
+padding:120px 8%;
+
+}
+
+.features{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.feature{
+
+background:white;
+
+padding:35px;
+
+border-radius:20px;
+
+text-align:center;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+}
+
+.feature:hover{
+
+transform:translateY(-10px);
+
+}
+
+.feature span{
+
+font-size:45px;
+
+display:block;
+
+margin-bottom:20px;
+
+}
+
+.feature h3{
+
+margin-bottom:15px;
+
+font-size:24px;
+
+}.gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+margin-top:50px;
+
+}
+
+.gallery-item{
+
+overflow:hidden;
+
+border-radius:20px;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.gallery-item img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+transition:.5s;
+
+display:block;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.08);
+
+}/* ---------- WHATSAPP ---------- */
+
+.whatsapp-float{
+    position:fixed;
+    right:25px;
+    bottom:25px;
+    width:65px;
+    height:65px;
+    border-radius:50%;
+    background:#25D366;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+    font-size:30px;
+    text-decoration:none;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    transition:.3s;
+    z-index:9999;
+}
+
+.whatsapp-float:hover{
+    transform:scale(1.08);
+    background:#20bd5a;
+}/* ---------- MAPA ---------- */
+
+.map-container{
+
+margin-top:40px;
+
+border-radius:20px;
+
+overflow:hidden;
+
+box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+.map-container iframe{
+
+display:block;
+
+width:100%;
+
+height:420px;
+
+border:none;
+
+}/* ==========================================
+   PÁGINAS DE SERVICIOS
+========================================== */
+
+.logo a{
+
+text-decoration:none;
+
+color:#222;
+
+}
+
+.section p{
+
+max-width:900px;
+
+margin:auto;
+
+text-align:center;
+
+font-size:18px;
+
+line-height:1.9;
+
+}
+
+footer{
+
+margin-top:100px;
+
+}/* ===========================
+   PÁGINAS DE SERVICIOS
+=========================== */
+
+.service-hero{
+
+    min-height:75vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
+    padding:120px 20px 80px;
+
+}
+
+.service-hero h1{
+
+    font-size:60px;
+
+    margin-bottom:20px;
+
+    font-family:'Playfair Display',serif;
+
+}
+
+.service-hero p{
+
+    max-width:700px;
+
+    margin:auto;
+
+    margin-bottom:35px;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+}
+
+.gallery{
+
+    margin-top:50px;
+
+}
+
+.gallery img{
+
+    border-radius:18px;
+
+}
+
+.features{
+
+    margin-top:60px;
+
+}
+
+.feature{
+
+    border-radius:18px;
+
+}
+
+.section h2{
+
+    margin-bottom:35px;
+
+}
+
+.section p{
+
+    max-width:900px;
+
+    margin:auto;
+
+    line-height:1.9;
+
+}
+
+/* ===== SERVICIOS HOME ===== */
+
+.subtitle{
+    text-align:center;
+    max-width:700px;
+    margin:20px auto 60px;
+    font-size:18px;
+    color:#666;
+}
+
+.services-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+    margin-top:50px;
+}
+
+.services-column{
+    background:#fff;
+    border-radius:20px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.services-column h3{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:25px;
+    font-family:'Playfair Display',serif;
+}
+
+.service-link{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+    border-bottom:1px solid #ececec;
+    text-decoration:none;
+    color:#222;
+    font-size:22px;
+    transition:.3s;
+}
+
+.service-link:hover{
+    color:#b98a43;
+    padding-left:12px;
+}
+
+.service-link span:last-child{
+    font-size:28px;
+    transition:.3s;
+}
+
+.service-link:hover span:last-child{
+    transform:translateX(8px);
+}
+
+@media(max-width:900px){
+
+.services-wrapper{
+
+grid-template-columns:1fr;
+
+}
+
+}
