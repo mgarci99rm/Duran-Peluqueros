@@ -511,8 +511,8 @@ margin-top:100px;
 .services-wrapper{
     display:grid;
     grid-template-columns:1fr 1fr;
-    gap:60px;
-    margin-top:50px;
+    gap:12px;
+    margin-top:20px;
 }
 
 .services-column{
