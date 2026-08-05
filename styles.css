@@ -615,3 +615,21 @@ nav a{
 }
 
 }
+
+/* ====================================================== */
+/* =================== RESPONSIVE ======================== */
+/* ====================================================== */
+
+@media (max-width: 768px) {
+
+    .hero{
+        background:
+        linear-gradient(rgba(0,0,0,.50), rgba(0,0,0,.40)),
+        url("assets/images/Portada-mobile.png");
+
+        background-size: cover;
+        background-position: center;
+        min-height: 90vh;
+    }
+
+}
