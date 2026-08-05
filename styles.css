@@ -85,11 +85,12 @@ nav a:hover{
     color:#fff;
 
     background:
-    linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
-    url("https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1800&q=80");
-
-    background-size:cover;
-    background-position:center;
+linear-gradient(rgba(0,0,0,.40), rgba(0,0,0,.40)),
+url("assets/images/Portada.png");
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+min-height: 100vh;
 }
 
 .hero h1{
