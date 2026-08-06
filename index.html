@@ -170,23 +170,41 @@
         Un espacio pensado para que disfrutes de una experiencia cómoda, profesional y cercana.
     </p>
 
-    <div class="gallery">
+   <div class="gallery">
 
-        <div class="gallery-item">
-           <img src="assets/images/Portada 2.png" alt="Interior de Durán Peluqueros">
-        </div>
+    <div class="gallery-item">
+        <img src="assets/images/Portada 2.png" alt="Interior del salón">
+    </div>
 
-        <div class="gallery-item">
-           <img src="assets/images/Lavacabezas lateral.png" alt="Zona de lavacabezas de Durán Peluqueros">
-        </div>
+    <div class="gallery-item">
+        <img src="assets/images/Lavacabezas lateral.png" alt="Zona de lavacabezas">
+    </div>
 
-        <div class="gallery-item">
-         <img src="assets/images/Sala de espera.png" alt="Sala de espera de Durán Peluqueros">
-        </div>
+    <div class="gallery-item">
+        <img src="assets/images/Sala de espera.png" alt="Sala de espera">
+    </div>
 
-        <div class="gallery-item">
-           <img src="assets/images/Vista lavacabezas.png" alt="Vista del salón Durán Peluqueros">
-        </div>
+    <div class="gallery-item">
+        <img src="assets/images/Vista lavacabezas.png" alt="Vista del salón">
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/images/Espejo mujeres.png" alt="Zona de peinado">
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/images/Recepcion acogedora.png" alt="Recepción">
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/images/Mueble Productos.png" alt="Productos profesionales">
+    </div>
+
+    <div class="gallery-item">
+        <img src="assets/images/Zona de Cafe y tee.png" alt="Zona café">
+    </div>
+
+</div>
 
     </div>
 
@@ -323,8 +341,84 @@
     💬
 
 </a>
+<div id="lightbox" class="lightbox">
 
+    <span class="close">&times;</span>
+
+    <span class="prev">&#10094;</span>
+
+    <img class="lightbox-img" src="" alt="">
+
+    <span class="next">&#10095;</span>
+
+</div>
 <script src="script.js"></script>
 
 </body>
 </html>
+/*============================*/
+/*        LIGHTBOX            */
+/*============================*/
+
+.lightbox{
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.92);
+z-index:9999;
+justify-content:center;
+align-items:center;
+}
+
+.lightbox.active{
+display:flex;
+}
+
+.lightbox-img{
+max-width:90%;
+max-height:88vh;
+border-radius:18px;
+box-shadow:0 30px 80px rgba(0,0,0,.55);
+animation:fade .25s ease;
+}
+
+.close,
+.prev,
+.next{
+position:absolute;
+color:#fff;
+font-size:44px;
+cursor:pointer;
+user-select:none;
+transition:.25s;
+}
+
+.close{
+top:25px;
+right:35px;
+}
+
+.prev{
+left:35px;
+}
+
+.next{
+right:35px;
+}
+
+.close:hover,
+.prev:hover,
+.next:hover{
+transform:scale(1.15);
+}
+
+@keyframes fade{
+from{
+opacity:0;
+transform:scale(.95);
+}
+to{
+opacity:1;
+transform:scale(1);
+}
+}
