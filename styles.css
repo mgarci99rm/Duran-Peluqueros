@@ -652,3 +652,4 @@ nav a{
 }
 
 }
+ /* Menú fijo al hacer scroll */ header { position: sticky; top: 0; z-index: 1000; } /* Efecto hover en tarjetas (servicios, reseñas) */ .feature { transition: transform 0.3s ease, box-shadow 0.3s ease; } .feature:hover { transform: translateY(-8px); box-shadow: 0 10px 25px rgba(0,0,0,0.12); } /* Animación de aparición al hacer scroll */ @keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } } section.animate-in { animation: fadeInUp 0.8s ease forwards; }
