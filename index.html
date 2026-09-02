@@ -34,14 +34,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-BRC4PBDQBT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-BRC4PBDQBT');
-</script>
+ <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} function cargarGoogleAnalytics() { var s = document.createElement('script'); s.async = true; s.src = 'https://www.googletagmanager.com/gtag/js?id=G-BRC4PBDQBT'; document.head.appendChild(s); gtag('js', new Date()); gtag('config', 'G-BRC4PBDQBT'); } if (localStorage.getItem('cookiesAceptadas') === 'si') { cargarGoogleAnalytics(); } </script>
 
 </head>
 
@@ -378,6 +371,7 @@ Domingos: cerrado
     💬
 
 </a>
+<div id="cookie-banner" style="display:none; position:fixed; bottom:0; left:0; width:100%; background:#1a1a1a; color:#fff; padding:18px 20px; z-index:99999; text-align:center; font-size:15px;"> Usamos cookies para analizar el uso de la web y mejorar tu experiencia. <button id="cookie-accept" style="margin-left:15px; background:#b98a43; color:#fff; border:none; padding:8px 20px; border-radius:20px; cursor:pointer; font-weight:600;">Aceptar</button> <button id="cookie-reject" style="margin-left:8px; background:transparent; color:#fff; border:1px solid #fff; padding:8px 20px; border-radius:20px; cursor:pointer;">Rechazar</button> </div> <script> document.addEventListener('DOMContentLoaded', function() { var consent = localStorage.getItem('cookiesAceptadas'); var banner = document.getElementById('cookie-banner'); if (!consent) { banner.style.display = 'block'; } document.getElementById('cookie-accept').addEventListener('click', function() { localStorage.setItem('cookiesAceptadas', 'si'); banner.style.display = 'none'; if (typeof cargarGoogleAnalytics === 'function') cargarGoogleAnalytics(); }); document.getElementById('cookie-reject').addEventListener('click', function() { localStorage.setItem('cookiesAceptadas', 'no'); banner.style.display = 'none'; }); }); </script>
 <script> document.addEventListener('DOMContentLoaded', function () { const sections = document.querySelectorAll('section'); const observer = new IntersectionObserver((entries) => { entries.forEach((entry) => { if (entry.isIntersecting) { entry.target.classList.add('animate-in'); observer.unobserve(entry.target); } }); }, { threshold: 0.1 }); sections.forEach((el) => observer.observe(el)); }); </script>
 </body>
 
